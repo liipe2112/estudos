@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De 0 à 20</title>
+</head>
+<body>
+    <h1><center>Este programa conta de 0 à 20 em ordem decrescente</center></h1>
+    <script>
+        function pulaLinha() {
+            document.write("<br/><br/>")
+            document.write("<hr/>")
+        }
+
+        function mostra(frase){
+            document.write(frase);
+        }
+
+        var contador = 20;
+
+        while(contador >= 0){
+            mostra(contador);
+            contador = contador - 1;
+            pulaLinha();
+        }
+
+        mostra("Fim!");
+    </script>
+</body>
+</html>
