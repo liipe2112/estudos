@@ -1,21 +1,31 @@
-<meta charset="UTF-8">
-<script>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>IMC</title>
+</head>
+<body>
+	<script>
 
-var nome = prompt("Informe seu nome: ");
-var peso = prompt(nome + ", informe seu peso");
-var altura = prompt(nome + ", informe sua altura")
-
-var imc = peso / (altura * altura);
-
-document.write(nome + ", seu IMC é " + imc + "<br>");
-
-if(imc >= 18.5 && imc < 25){
-	document.write("Você está no peso ideal.")
-}
-else if (imc > 25) {
-	document.write("Você está acima do peso.")
-}
-else if(imc < 18.5){
-	document.write("Você está abaixo do peso.")
-}
-</script>
+		var nome = prompt("Informe seu nome: ");
+		var peso = prompt(nome + ", informe seu peso");
+		var altura = prompt(nome + ", informe sua altura")
+		
+		var imc = peso / (altura * altura);
+		
+		document.write(nome + ", seu IMC é " + imc + "<br>");
+		
+		if(imc >= 18.5 && imc < 25){
+			document.write("Você está no peso ideal.")
+		}
+		else if (imc > 25) {
+			document.write("Você está acima do peso.")
+		}
+		else if(imc < 18.5){
+			document.write("Você está abaixo do peso.")
+		}
+		</script>
+</body>
+</html>
